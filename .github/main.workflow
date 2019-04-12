@@ -14,6 +14,6 @@ action "update-gist" {
     "TWITTER_CONSUMER_SECRET",
     "TWITTER_ACCESS_TOKEN_KEY",
     "TWITTER_ACCESS_TOKEN_SECRET",
-    "GITHUB_TOKEN",
+    "GH_TOKEN",
   ]
 }
