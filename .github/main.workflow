@@ -4,16 +4,16 @@ workflow "Update gist with latest tweet" {
 }
 
 action "update-gist" {
-  uses = "matchai/bird-box@master"
+  uses = "mscoutermarsh/bird-box@master"
   env = {
-    "TWITTER_USER" = "matchai"
-    "GIST_ID" = "6d5f84419863089a167387da62dd7081"
+    TWITTER_USER = "mscoutermarsh"
+    GIST_ID = "4a48fa97b93b6097509a89255a73cf4d"
   }
   secrets = [
-    "GH_TOKEN",
     "TWITTER_CONSUMER_KEY",
     "TWITTER_CONSUMER_SECRET",
     "TWITTER_ACCESS_TOKEN_KEY",
     "TWITTER_ACCESS_TOKEN_SECRET",
+    "GITHUB_TOKEN",
   ]
 }
