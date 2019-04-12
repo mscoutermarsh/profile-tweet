@@ -1,6 +1,6 @@
 workflow "Update gist with latest tweet" {
-  resolves = ["update-gist"]
   on = "push"
+  resolves = ["update-gist"]
 }
 
 action "update-gist" {
