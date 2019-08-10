@@ -4,17 +4,16 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@master
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
-      with:
-        version: 10.x
-    - name: screenshot tweet and update gist 🐦🖼
-      env:
+      - uses: actions/checkout@master
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          version: 10.x
+      - name: screenshot tweet and update gist 🐦🖼
+        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
           TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
@@ -24,6 +23,8 @@ jobs:
           GIST_ID: ${{ secrets.GIST_ID }}
           HCTI_API_ID: ${{ secrets.HCTI_API_ID }}
           HCTI_API_SECRET: ${{ secrets.HCTI_API_KEY }}
-      run: |
-        npm install
-        node index
+        run: |
+          git config --global user.email "coutermarsh.mike@gmail.com"
+          git config --global user.name "Mike Coutermarsh"
+          npm install
+          node index
