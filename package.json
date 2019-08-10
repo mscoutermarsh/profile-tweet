@@ -8,6 +8,10 @@
     "@octokit/rest": "^16.18.1",
     "date-fns": "^2.0.0-alpha.27",
     "dotenv": "^7.0.0",
+    "fs-extra": "^7.0.1",
+    "image-downloader": "^3.4.2",
+    "request-promise": "^4.2.4",
+    "simple-git": "^1.110.0",
     "twitter": "^1.7.1",
     "wordwrap": "^1.0.0"
   },
