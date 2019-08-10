@@ -16,6 +16,9 @@ async function pushGist(url, filename) {
     .silent(true)
     .clone(remote, "./working_dir");
 
+  await git().addConfig("user.name", "Mike Coutermarsh");
+  await git().addConfig("user.email", "coutermarsh.mike@gmail.com");
+
   const options = {
     url: url,
     dest: `./working_dir/${filename}.png`
