@@ -1,6 +1,7 @@
 name: tweet tweet
 
-schedule:
+on:
+  schedule:
   - cron:  0 */6 * * *
 
 jobs:
