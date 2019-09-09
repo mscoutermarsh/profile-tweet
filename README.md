@@ -1,5 +1,7 @@
 ## Profile tweet
 
+![](https://github.com/mscoutermarsh/profile-tweet/workflows/tweet%20tweet/badge.svg)
+
 This uses [GitHub Actions](https://github.com/features/actions) + [HTML/CSS to Image](https://htmlcsstoimage.com) to show my latest tweet on my GitHub profile. It runs every 6 hours.
 
 ---
